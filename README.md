@@ -1,0 +1,2 @@
+# config
+Vanilla configuration
