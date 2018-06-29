@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 181 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-140,-260)">
+        <g transform="matrix(11.6891,0,0,11.6891,-2616,-3443.15)">
+            <clipPath id="_clip1">
+                <rect x="235.861" y="316.87" width="15.089" height="8.709"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <text x="239.7px" y="325.843px" style="font-family:'YuGothic-Regular', 'Yu Gothic', sans-serif;font-size:12px;">V</text>
+            </g>
+        </g>
+        <g transform="matrix(-11.6891,-1.4315e-15,1.4315e-15,-11.6891,3128.17,4066.51)">
+            <text x="239.7px" y="325.843px" style="font-family:'YuGothic-Regular', 'Yu Gothic', sans-serif;font-size:12px;">V</text>
+        </g>
+        <g transform="matrix(-11.6891,-1.4315e-15,1.4315e-15,-11.6891,3028.17,4066.51)">
+            <text x="239.7px" y="325.843px" style="font-family:'YuGothic-Regular', 'Yu Gothic', sans-serif;font-size:12px;">V</text>
+        </g>
+    </g>
+</svg>
