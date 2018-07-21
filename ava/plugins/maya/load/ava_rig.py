@@ -8,7 +8,7 @@ class RigLoader(avalon.maya.Loader):
 
     """
 
-    families = ["mindbender.rig"]
+    families = ["ava.rig"]
     representations = ["ma"]
 
     def process(self, name, namespace, context, data):
@@ -53,7 +53,7 @@ class RigLoader(avalon.maya.Loader):
                 # asset from which the Rig was produced.
                 asset=api.Session["AVALON_ASSET"],
 
-                family="mindbender.animation",
+                family="ava.animation",
                 options={"useSelection": True},
                 data={
                     "dependencies": " ".join(str(d) for d in dependencies)

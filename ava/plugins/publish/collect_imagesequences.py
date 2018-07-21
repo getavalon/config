@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class CollectMindbenderImageSequences(pyblish.api.ContextPlugin):
+class CollectAvaImageSequences(pyblish.api.ContextPlugin):
     """Gather image sequnences from working directory"""
 
     order = pyblish.api.CollectorOrder
@@ -47,7 +47,7 @@ class CollectMindbenderImageSequences(pyblish.api.ContextPlugin):
                 data = dict(metadata["instance"], **{
                     "name": instance.name,
                     "family": "Image Sequences",
-                    "families": ["mindbender.imagesequence"],
+                    "families": ["ava.imagesequence"],
                     "subset": collection.head[:-1],
                     "stagingDir": os.path.join(workspace, renderlayer),
                     "files": [list(collection)],

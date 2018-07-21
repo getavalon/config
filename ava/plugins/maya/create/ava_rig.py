@@ -6,4 +6,4 @@ class CreateRig(maya.Creator):
 
     name = "rigDefault"
     label = "Rig"
-    family = "mindbender.rig"
+    family = "ava.rig"

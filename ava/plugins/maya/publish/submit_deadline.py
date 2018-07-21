@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class MindbenderSubmitDeadline(pyblish.api.InstancePlugin):
+class AvaSubmitDeadline(pyblish.api.InstancePlugin):
     """Submit available render layers to Deadline
 
     Renders are submitted to a Deadline Web Service as
@@ -12,7 +12,7 @@ class MindbenderSubmitDeadline(pyblish.api.InstancePlugin):
     label = "Submit to Deadline"
     order = pyblish.api.IntegratorOrder
     hosts = ["maya"]
-    families = ["mindbender.renderlayer"]
+    families = ["ava.renderlayer"]
 
     def process(self, instance):
         import os

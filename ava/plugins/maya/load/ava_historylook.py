@@ -4,7 +4,7 @@ import avalon.maya
 class HistoryLookLoader(avalon.maya.Loader):
     """Specific loader for lookdev"""
 
-    families = ["mindbender.historyLookdev"]
+    families = ["ava.historyLookdev"]
     representations = ["ma"]
 
     def process(self, name, namespace, context, data):

@@ -18,13 +18,13 @@ class UploadAvalonAsset(api.InstancePlugin):
     active = bool(Session.get("AVALON_UPLOAD"))
 
     families = [
-        "mindbender.model",
-        "mindbender.rig",
-        "mindbender.animation",
-        "mindbender.lookdev",
-        "mindbender.historyLookdev",
-        "mindbender.group",
-        "mindbender.imagesequence",
+        "ava.model",
+        "ava.rig",
+        "ava.animation",
+        "ava.lookdev",
+        "ava.historyLookdev",
+        "ava.group",
+        "ava.imagesequence",
     ]
 
     def process(self, instance):

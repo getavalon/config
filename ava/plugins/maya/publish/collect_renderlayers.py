@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class CollectMindbenderMayaRenderlayers(pyblish.api.ContextPlugin):
+class CollectAvaMayaRenderlayers(pyblish.api.ContextPlugin):
     """Gather instances by active render layers"""
 
     order = pyblish.api.CollectorOrder
@@ -21,7 +21,7 @@ class CollectMindbenderMayaRenderlayers(pyblish.api.ContextPlugin):
 
             data = {
                 "family": "Render Layers",
-                "families": ["mindbender.renderlayer"],
+                "families": ["ava.renderlayer"],
                 "publish": cmds.getAttr(layer + ".renderable"),
                 "startFrame": render_global("startFrame"),
                 "endFrame": render_global("endFrame"),

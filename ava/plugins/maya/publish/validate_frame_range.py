@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ValidateMindbenderFrameRange(pyblish.api.InstancePlugin):
+class ValidateAvaFrameRange(pyblish.api.InstancePlugin):
     """Animation should normally be published with the range for a shot"""
 
     label = "Frame Range"
@@ -9,7 +9,7 @@ class ValidateMindbenderFrameRange(pyblish.api.InstancePlugin):
     hosts = ["maya"]
     optional = True
     families = [
-        "mindbender.animation",
+        "ava.animation",
     ]
 
     def process(self, instance):

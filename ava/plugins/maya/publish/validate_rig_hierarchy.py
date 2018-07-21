@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ValidateMindbenderRigHierarchy(pyblish.api.InstancePlugin):
+class ValidateAvaRigHierarchy(pyblish.api.InstancePlugin):
     """A rig must reside under a single assembly called "ROOT"
 
     - Must reside within `ROOT` transform
@@ -11,7 +11,7 @@ class ValidateMindbenderRigHierarchy(pyblish.api.InstancePlugin):
     label = "Rig Hierarchy"
     order = pyblish.api.ValidatorOrder
     hosts = ["maya"]
-    families = ["mindbender.rig"]
+    families = ["ava.rig"]
 
     def process(self, instance):
         from maya import cmds

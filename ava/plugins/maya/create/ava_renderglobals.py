@@ -6,7 +6,7 @@ class CreateRenderGlobals(maya.Creator):
 
     name = "renderGlobals"
     label = "Render Gloabls"
-    family = "mindbender.renderglobals"
+    family = "ava.renderglobals"
 
     def __init__(self, *args, **kwargs):
         super(CreateRenderGlobals, self).__init__(*args, **kwargs)

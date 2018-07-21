@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ValidateMindbenderNormals(pyblish.api.InstancePlugin):
+class ValidateAvaNormals(pyblish.api.InstancePlugin):
     """Normals of a model may not be locked
 
     Locked normals shading during interactive use to behave
@@ -13,7 +13,7 @@ class ValidateMindbenderNormals(pyblish.api.InstancePlugin):
     label = "Normals"
     order = pyblish.api.ValidatorOrder
     hosts = ["maya"]
-    families = ["mindbender.model"]
+    families = ["ava.model"]
 
     def process(self, instance):
         from maya import cmds

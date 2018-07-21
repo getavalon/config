@@ -2,7 +2,7 @@
 import pyblish.api
 
 
-class ValidateMindbenderProjectEditInfo(pyblish.api.ContextPlugin):
+class ValidateAvaProjectEditInfo(pyblish.api.ContextPlugin):
     """Checks your scene with editorial info
 
     All the info that gets validated has been set by the projects bat files.
@@ -13,7 +13,7 @@ class ValidateMindbenderProjectEditInfo(pyblish.api.ContextPlugin):
     label = "Project Edit Info"
     optional = True
     order = pyblish.api.ValidatorOrder
-    families = ["mindbender.animation"]
+    families = ["ava.animation"]
 
     def process(self, context):
         from maya import cmds

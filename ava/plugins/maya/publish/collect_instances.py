@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class CollectMindbenderInstances(pyblish.api.ContextPlugin):
+class CollectAvaInstances(pyblish.api.ContextPlugin):
     """Gather instances by objectSet and pre-defined attribute
 
     This collector takes into account assets that are associated with
@@ -42,7 +42,7 @@ class CollectMindbenderInstances(pyblish.api.ContextPlugin):
                     "pyblish.avalon.instance",
 
                     # Backwards compatibility
-                    "pyblish.mindbender.instance"):
+                    "pyblish.ava.instance"):
 
                 continue
 

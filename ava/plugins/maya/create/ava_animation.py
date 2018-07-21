@@ -5,7 +5,7 @@ class CreateAnimation(maya.Creator):
     """Any character or prop animation"""
 
     name = "animationDefault"
-    family = "mindbender.animation"
+    family = "ava.animation"
     label = "Animation"
 
     def __init__(self, *args, **kwargs):

@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ValidateMindbenderEncapsulation(pyblish.api.InstancePlugin):
+class ValidateAvaEncapsulation(pyblish.api.InstancePlugin):
     """Resources must not contain absolute paths.
 
     When working with external files, such as textures and caches,
@@ -14,7 +14,7 @@ class ValidateMindbenderEncapsulation(pyblish.api.InstancePlugin):
     label = "Encapsulation"
     order = pyblish.api.ValidatorOrder
     hosts = ["maya"]
-    families = ["mindbender.model", "mindbender.rig"]
+    families = ["ava.model", "ava.rig"]
 
     def process(self, instance):
         import os

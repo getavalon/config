@@ -8,7 +8,7 @@ class ModelLoader(avalon.maya.Loader):
 
     """
 
-    families = ["mindbender.model"]
+    families = ["ava.model"]
     representations = ["ma"]
 
     def process(self, name, namespace, context, data):

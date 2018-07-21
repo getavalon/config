@@ -1,13 +1,13 @@
 import pyblish.api
 
 
-class ValidateMindbenderDeadlineDone(pyblish.api.InstancePlugin):
+class ValidateAvaDeadlineDone(pyblish.api.InstancePlugin):
     """Ensure render is finished before publishing the resulting images"""
 
     label = "Rendered Successfully"
     order = pyblish.api.ValidatorOrder
     hosts = ["shell"]
-    families = ["mindbender.imagesequence"]
+    families = ["ava.imagesequence"]
     optional = True
 
     def process(self, instance):

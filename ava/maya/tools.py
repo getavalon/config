@@ -70,7 +70,7 @@ class _RenderGlobalsEditor(QtWidgets.QDialog):
             render_globals = maya.create(
                 "renderGlobals",
                 api.Session["AVALON_ASSET"],
-                "mindbender.renderglobals"
+                "ava.renderglobals"
             )
 
         # Store reference for editing

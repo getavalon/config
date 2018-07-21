@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ExtractMindbenderRig(pyblish.api.InstancePlugin):
+class ExtractAvaRig(pyblish.api.InstancePlugin):
     """Produce Maya file compatible with referencing
 
     Rigs come in many flavours. This plug-in carefully only excludes
@@ -10,18 +10,18 @@ class ExtractMindbenderRig(pyblish.api.InstancePlugin):
 
     """
 
-    label = "Extract Mindbender Rig"
+    label = "Extract Ava Rig"
     order = pyblish.api.ExtractorOrder
     hosts = ["maya"]
-    families = ["mindbender.rig"]
+    families = ["ava.rig"]
 
     def process(self, instance):
         import os
-        import polly
+        import ava
         from maya import cmds
         from avalon import maya
 
-        dirname = polly.format_staging_dir(
+        dirname = ava.format_staging_dir(
             root=instance.context.data["workspaceDir"],
             time=instance.context.data["time"],
             name=instance.data["name"])

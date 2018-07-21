@@ -1,13 +1,13 @@
 import pyblish.api
 
 
-class ValidateMindbenderImagePrefix(pyblish.api.InstancePlugin):
+class ValidateAvaImagePrefix(pyblish.api.InstancePlugin):
     """Image prefix is automatically handled by the pipeline"""
 
     label = "Image Prefix"
     order = pyblish.api.ValidatorOrder
     hosts = ["maya"]
-    families = ["mindbender.renderlayer"]
+    families = ["ava.renderlayer"]
 
     def process(self, instance):
         from maya import cmds

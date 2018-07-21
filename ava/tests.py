@@ -61,7 +61,7 @@ def setup():
     api.register_root(self._tempdir)
 
     # Setup environment
-    os.environ["AVALON_CONFIG"] = "polly"
+    os.environ["AVALON_CONFIG"] = "ava"
     os.environ["AVALON_PROJECT"] = PROJECT_NAME
     os.environ["AVALON_ASSET"] = ASSET_NAME
     os.environ["AVALON_TASK"] = TASK_NAME
@@ -152,7 +152,7 @@ def test_modeling():
     maya.create(
         name="modelDefault",
         asset=ASSET_NAME,
-        family="mindbender.model",
+        family="ava.model",
         options={"useSelection": True}
     )
 
@@ -212,7 +212,7 @@ def test_alembic_export():
     maya.create(
         name="animationDefault",
         asset=ASSET_NAME,
-        family="mindbender.animation",
+        family="ava.animation",
         options={"useSelection": True}
     )
 
@@ -273,7 +273,7 @@ def test_update():
     maya.create(
         name="modelDefault",
         asset=ASSET_NAME,
-        family="mindbender.model",
+        family="ava.model",
         options={"useSelection": True}
     )
 
@@ -330,7 +330,7 @@ def test_modeling_to_rigging():
     maya.create(
         name="modelDefault",
         asset=ASSET_NAME,
-        family="mindbender.model",
+        family="ava.model",
         options={"useSelection": True})
 
     # Comply with save validator
@@ -369,7 +369,7 @@ def test_modeling_to_rigging():
     maya.create(
         name="rigDefault",
         asset=os.environ["AVALON_ASSET"],
-        family="mindbender.rig",
+        family="ava.rig",
         options={"useSelection": True},
     )
 

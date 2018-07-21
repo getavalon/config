@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ValidateMindbenderLockedScene(pyblish.api.ContextPlugin):
+class ValidateAvaLockedScene(pyblish.api.ContextPlugin):
     """Guard against publishing a scene that has already been published"""
 
     label = "Locked Scene"

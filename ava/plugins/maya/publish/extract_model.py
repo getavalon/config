@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ExtractMindbenderModel(pyblish.api.InstancePlugin):
+class ExtractAvaModel(pyblish.api.InstancePlugin):
     """Produce a stripped down Maya file from instance
 
     This plug-in takes into account only nodes relevant to models
@@ -13,15 +13,15 @@ class ExtractMindbenderModel(pyblish.api.InstancePlugin):
     label = "Model"
     order = pyblish.api.ExtractorOrder
     hosts = ["maya"]
-    families = ["mindbender.model"]
+    families = ["ava.model"]
 
     def process(self, instance):
         import os
-        import polly
+        import ava
         from maya import cmds
         from avalon import maya
 
-        dirname = polly.format_staging_dir(
+        dirname = ava.format_staging_dir(
             root=instance.context.data["workspaceDir"],
             time=instance.context.data["time"],
             name=instance.data["name"])

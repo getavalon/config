@@ -6,4 +6,4 @@ class CreateModel(maya.Creator):
 
     name = "modelDefault"
     label = "Model"
-    family = "mindbender.model"
+    family = "ava.model"

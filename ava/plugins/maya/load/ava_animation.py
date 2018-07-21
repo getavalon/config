@@ -2,9 +2,9 @@ import avalon.maya
 
 
 class AbcLoader(avalon.maya.Loader):
-    """Specific loader of Alembic for the mindbender.animation family"""
+    """Specific loader of Alembic for the ava.animation family"""
 
-    families = ["mindbender.animation"]
+    families = ["ava.animation"]
     representations = ["abc"]
 
     def process(self, name, namespace, context, data):
@@ -30,9 +30,9 @@ class AbcLoader(avalon.maya.Loader):
 
 
 class CurvesLoader(avalon.maya.Loader):
-    """Specific loader of Curves for the mindbender.animation family"""
+    """Specific loader of Curves for the ava.animation family"""
 
-    families = ["mindbender.animation"]
+    families = ["ava.animation"]
     representations = ["curves"]
 
     def process(self, name, namespace, context, data):
@@ -147,7 +147,7 @@ class CurvesLoader(avalon.maya.Loader):
             # TODO(marcus): Hardcoding the family here, better separate this.
             maya.create(
                 name=maya.unique_name(name, suffix="_SET"),
-                family="mindbender.animation",
+                family="ava.animation",
                 options={"useSelection": True},
                 data={
                     "dependencies": " ".join(str(d) for d in dependencies)
@@ -155,9 +155,9 @@ class CurvesLoader(avalon.maya.Loader):
 
 
 class HistoryLoader(avalon.maya.Loader):
-    """Specific loader of Curves for the mindbender.animation family"""
+    """Specific loader of Curves for the ava.animation family"""
 
-    families = ["mindbender.animation"]
+    families = ["ava.animation"]
     representations = ["history"]
 
     def process(self, name, namespace, context, data):

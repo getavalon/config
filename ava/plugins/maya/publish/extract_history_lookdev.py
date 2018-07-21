@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class MindbenderExtractHistoryLookdev(pyblish.api.InstancePlugin):
+class AvaExtractHistoryLookdev(pyblish.api.InstancePlugin):
     """Export shaders for rendering
 
     Shaders are associated with an "mdID" attribute on each *transform* node.
@@ -13,11 +13,11 @@ class MindbenderExtractHistoryLookdev(pyblish.api.InstancePlugin):
     label = "History Lookdev"
     order = pyblish.api.ExtractorOrder
     hosts = ["maya"]
-    families = ["mindbender.historyLookdev"]
+    families = ["ava.historyLookdev"]
 
     def process(self, instance):
         import os
-        import polly
+        import ava
         import contextlib
         from maya import cmds
         from avalon import maya
@@ -44,7 +44,7 @@ class MindbenderExtractHistoryLookdev(pyblish.api.InstancePlugin):
                 for src, dst in connections:
                     cmds.connectAttr(src, dst, force=True)
 
-        dirname = polly.format_staging_dir(
+        dirname = ava.format_staging_dir(
             root=instance.context.data["workspaceDir"],
             time=instance.context.data["time"],
             name=instance.data["name"])

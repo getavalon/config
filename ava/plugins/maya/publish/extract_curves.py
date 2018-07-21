@@ -1,15 +1,15 @@
 import pyblish.api
 
 
-class ExtractMindbenderCurves(pyblish.api.InstancePlugin):
+class ExtractAvaCurves(pyblish.api.InstancePlugin):
     label = "Curves"
     order = pyblish.api.ExtractorOrder
     hosts = ["maya"]
-    families = ["mindbender.animation"]
+    families = ["ava.animation"]
 
     def process(self, instance):
         import os
-        import polly
+        import ava
         from maya import cmds
         from avalon import maya
 
@@ -17,7 +17,7 @@ class ExtractMindbenderCurves(pyblish.api.InstancePlugin):
         cmds.loadPlugin("atomImportExport.mll", quiet=True)
 
         self.log.info("Extracting curves..")
-        dirname = polly.format_staging_dir(
+        dirname = ava.format_staging_dir(
             root=instance.context.data["workspaceDir"],
             time=instance.context.data["time"],
             name=instance.data["name"])

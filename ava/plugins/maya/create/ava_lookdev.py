@@ -6,4 +6,4 @@ class CreateLookdev(maya.Creator):
 
     name = "lookdevDefault"
     label = "Lookdev"
-    family = "mindbender.lookdev"
+    family = "ava.lookdev"

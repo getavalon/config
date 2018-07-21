@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ValidateMindbenderSingleShape(pyblish.api.InstancePlugin):
+class ValidateAvaSingleShape(pyblish.api.InstancePlugin):
     """Transforms with a mesh must ever only contain a single mesh
 
     This ensures models only contain a single shape node.
@@ -12,7 +12,7 @@ class ValidateMindbenderSingleShape(pyblish.api.InstancePlugin):
     order = pyblish.api.ValidatorOrder
     hosts = ["maya"]
     families = [
-        "mindbender.model",
+        "ava.model",
     ]
 
     def process(self, instance):

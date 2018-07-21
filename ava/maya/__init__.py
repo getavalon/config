@@ -53,14 +53,14 @@ def _set_uuid(node):
         cmds.setAttr(attr, uid, type="string")
 
 
-def on_init(_):
+def on_init(_=None):
     avalon.logger.info("Running callback on init..")
 
     maya.commands.reset_frame_range()
     maya.commands.reset_resolution()
 
 
-def on_new(_):
+def on_new(_=None):
     avalon.logger.info("Running callback on new..")
 
     # Load dependencies
@@ -71,7 +71,7 @@ def on_new(_):
     maya.commands.reset_resolution()
 
 
-def on_save(_):
+def on_save(_=None):
     """Automatically add IDs to new nodes
 
     Any transform of a mesh, without an exising ID,
@@ -92,7 +92,7 @@ def on_save(_):
         _set_uuid(node)
 
 
-def before_save(return_code, _):
+def before_save(return_code, _=None):
     """Prevent accidental overwrite of locked scene"""
 
     # Manually override message given by default dialog

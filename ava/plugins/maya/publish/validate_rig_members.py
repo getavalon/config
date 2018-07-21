@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class ValidateMindbenderRigFormat(pyblish.api.InstancePlugin):
+class ValidateAvaRigFormat(pyblish.api.InstancePlugin):
     """A rig must have a certain hierarchy and members
 
     - Must reside within `rig_GRP` transform
@@ -15,7 +15,7 @@ class ValidateMindbenderRigFormat(pyblish.api.InstancePlugin):
     label = "Rig Format"
     order = pyblish.api.ValidatorOrder
     hosts = ["maya"]
-    families = ["mindbender.rig"]
+    families = ["ava.rig"]
 
     def process(self, instance):
         from maya import cmds

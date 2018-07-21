@@ -4,7 +4,7 @@ import avalon.maya
 class LookLoader(avalon.maya.Loader):
     """Specific loader for lookdev"""
 
-    families = ["mindbender.lookdev"]
+    families = ["ava.lookdev"]
     representations = ["ma"]
 
     def process(self, name, namespace, context, data):
@@ -12,7 +12,7 @@ class LookLoader(avalon.maya.Loader):
         import json
 
         from maya import cmds
-        from polly.maya import lib
+        from ava.maya import lib
 
         try:
             existing_reference = cmds.file(self.fname,
